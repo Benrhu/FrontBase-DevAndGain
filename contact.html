@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DAG - Comunidad de Devs para Devs</title>
+  <!-- Añade el CDN de Tailwind CSS -->
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="/img/icons8-inspect-code-50.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <!-- Menú de navegación -->
+  <nav class="fixed top-0 left-0 right-0 z-50">
+    <div class="container mx-auto px-4 py-6 flex items-center justify-between">
+      <a href="#" class="text-lg font-bold text-white">DevAndGain</a>
+      <ul class="flex">
+        <li><a href="#inicio" class="px-3 py-2 font-semibold text-white rounded-full hover:bg-gray-800">Inicio</a></li>
+        <li><a href="#productos" class="px-3 py-2 font-semibold text-white rounded-full hover:bg-gray-800">Productos</a>
+        </li>
+        <li><a href="#ubicacion" class="px-3 py-2 font-semibold text-white rounded-full hover:bg-gray-800">Ubicación</a>
+        </li>
+        <li><a href="#contacto" class="px-3 py-2 font-semibold text-white rounded-full hover:bg-gray-800">Contacto</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Sección de inicio -->
+  <section id="inicio" class="bg-gray-900 py-24 text-center gradInit">
+    <div class="container mx-auto px-4">
+      <h1 class="text-4xl font-bold text-white mb-8">Bienvenido a tu centro de recursos Dev</h1>
+      <p class="text-lg text-white mb-8">Tienes a tu disposición cartas de ventas, plantillas Front y Back, estructuras de proyectos, <br>
+         tips diarios y muchos más recursos para mejorar tu calidad <br>y tu servicio como profesionalde la programción.</p>
+      <a href="#productos" class="bg-white font-bold py-2 px-4 rounded-full shadow-md hover:shadow-lg">Ver productos</a>
+    </div>
+  </section>
+  <main class="">
+    <!-- Sección de productos -->
+    <section id="productos" class=" py-24 text-center">
+      <div class="container mx-auto w-100">
+        <h2 class="text-3xl font-bold mb-8">Nuestras novedades</h2>
+        <div class="w-100 px-40 justify-items-center grid lg:grid-cols-2 gap-5">
+          <!-- Tarjeta de producto -->
+          <div class="text-center bg-white rounded-lg shadow-lg">
+            <img src="/img/chatgpt-banner.jpg" alt="" class="h-60 w-full rounded-t-lg">
+            <div class=" p-6">
+              <h3 class="text-xl font-bold mb-4">Tutorial ChatGPT</h3>
+              <p class="text-gray-700 mb-4">Te enseño ćomo usar desde 0 ChatGPT para desarrollar el proyecto que quieras.</p>
+              <a href="#"
+                class="inline-block bg-indigo-500 text-white font-bold py-2 px-4 rounded-full hover:bg-indigo-600">Ver
+                más</a>
+            </div>
+          </div>
+
+          <!-- Tarjeta de producto -->
+          <div class="text-center bg-white rounded-lg shadow-lg">
+            <img src="/img/restful-api.jpg" alt="" class="h-60 w-full rounded-t-lg">
+            <div class="p-6">
+              <h3 class="text-xl font-bold mb-4">RESTFul API tutorial + código</h3>
+              <p class="text-gray-700 mb-4">Te enseño cómo desarrollar una API senciilla con NodeJS, Express y MongoDB.</p>
+              <a href="#"
+                class="inline-block bg-indigo-500 text-white font-bold py-2 px-4 rounded-full hover:bg-indigo-600">Ver
+                más</a>
+            </div>
+          </div>
+    </section>
+
+    <!-- Sección de contacto -->
+    <section id="contacto" class="text-center py-24 ">
+      <div class="mx-auto w-50">
+        <h2 class="text-3xl font-bold mb-8">Contacto</h2>
+        <div class="container justify-items-center">
+          <!-- Formulario de contacto -->
+          <form action="#" class=" bg-white rounded-lg shadow-lg p-6">
+            <div class="mb-4">
+              <label for="nombre" class=" text-gray-700 font-bold mb-2">Nombre</label>
+              <input type="text" id="nombre" class="py-2 px-3 rounded-lg shadow-sm"
+                placeholder="Escribe tu nombre">
+            </div>
+            <div class="mb-4">
+              <label for="empresa" class=" text-gray-700 font-bold mb-2">Empresa</label>
+              <input type="text" id="empresa" class=" py-2 px-3 rounded-lg shadow-sm"
+                placeholder="Escribe el nombre de tu empresa">
+            </div>
+            <div class="mb-4">
+              <label for="email" class=" text-gray-700 font-bold mb-2">Email</label>
+              <input type="text" id="email" class=" py-2 px-3 rounded-lg shadow-sm"
+                placeholder="Escribe tu email">
+            </div>
+            <div class="mb-4">
+              <label for="mensaje" class=" text-gray-700 font-bold mb-2">Mensaje</label>
+              <input type="text" id="mensaje" class=" py-2 px-3 rounded-lg shadow-sm"
+                placeholder="Escribe tu mensaje">
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <footer>
+    <!-- Contenido del footer -->
+  </footer>
+  <!-- Añade tus archivos JavaScript al final del body para mejorar el rendimiento -->
+  <script src="mi-archivo.js"></script>
+</body>
+
+</html>
